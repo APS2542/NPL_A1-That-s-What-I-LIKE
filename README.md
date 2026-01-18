@@ -56,6 +56,12 @@ A Flask-based web application is developed to perform similarity search.
 - Retrieve Top-10 most similar contexts
 - Similarity is computed using dot product
 
+### Example Result
+
+The figure below shows an example search using the query **"election"** with Skipgram (NEG) embeddings.
+
+![Web App Screenshot](sample.png)
+
 ### Similarity Method
 
 - Query vector: average of word vectors
