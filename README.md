@@ -19,15 +19,16 @@ The embeddings are evaluated using:
 ---
 
 ## 📁 Project Structure
-notebooks/ -> Task 1 & Task 2 Jupyter notebooks
-app/ -> Web application (Task 3)
-data/ -> Datasets
-models/ -> Trained embeddings (.npz)
+
+```text
+notebooks/      -> Jupyter notebooks for Task 1 and Task 2  
+app/            -> Flask web application for Task 3  
+data/           -> Datasets used in experiments  
+models/         -> Trained embedding models (.npz)  
 requirements.txt
 README.md
-
+```
 ---
-
 ## 🧪 Task 1 & Task 2
 
 The Jupyter notebooks contain:
@@ -70,6 +71,16 @@ pip install -r requirements.txt
 python app/app.py
 ```
 Then open in your browser: http://127.0.0.1:5000
+
+---
+## Acknowledgement
+
+The folder `notebooks/ref_code/` contains reference implementations provided by my course instructor and adapted from the following repository:
+
+https://github.com/chaklam-silpasuwanchai/Python-fo-Natural-Language-Processing
+
+These codes are used strictly for learning and comparison purposes.  
+All other codes, experiments, and web application development were completed by the student.
 
 ---
 
