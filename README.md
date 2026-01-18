@@ -8,7 +8,7 @@ This project implements and evaluates word embedding models including:
 - Skipgram
 - Skipgram with Negative Sampling
 - GloVe (from scratch)
-- GloVe (pretrained with gensim)
+- GloVe (gensim)
 
 The embeddings are evaluated using:
 
@@ -70,14 +70,53 @@ The figure below shows an example search using the query **"election"** with Ski
 
 ---
 
-## ▶️ How to Run the Web Application
+## ▶ How to Run the Web Application 
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/APS2542/NPL_A1-That's-What-I-LIKE.git
+cd NPL_A1-That's-What-I-LIKE
+```
+
+### 2. Install dependencies
+
+Make sure you have **Python 3.8+** installed.
 
 ```bash
 pip install -r requirements.txt
+```
+
+### 3. Run the web application
+
+```bash
 python app/app.py
 ```
-Then open in your browser: http://127.0.0.1:5000
 
+### 4. Open in browser
+
+After running the command, open your browser and go to:
+
+👉 http://127.0.0.1:5000
+
+---
+
+### 📌 Notes
+
+- The system retrieves the **Top-10 most similar contexts** from the Brown corpus.
+- Query vectors are computed by averaging word embeddings.
+- Similarity is calculated using **dot product**.
+- You can switch between **Skipgram**, **Skipgram (NEG)**, and **GloVe** models from the dropdown menu.
+
+---
+
+### 🔍 Example Queries
+
+```text
+election
+government policy
+court decision
+```
 ---
 ## Acknowledgement
 
